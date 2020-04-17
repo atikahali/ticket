@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Ticketing System</title>
+   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-indigo.min.css" />
+	<script src="./material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+<!-- Uses a transparent header that draws on top of the layout's background -->
+	<style>
+		.demo-layout-transparent { background: url('bus.jpg') center / cover; }
+		.demo-layout-transparent .mdl-layout__header,
+		.demo-layout-transparent .mdl-layout__header-row .mdl-navigation__link{
+  		/* This background is dark, so we set text to white. Use 87% black instead if your background is light.*/
+  			color: white;
+		}
+	</style>
+
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">AiKa Bus Ticket</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer">&copy; 2019</div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="index.html">Home</a>
+        <a class="mdl-navigation__link" href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+ 
+  <main class="mdl-layout__content" align="center">
+  	<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" align="center">
+  <thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric">Bus</th>
+      <th>Time</th>
+      <th>Price (RM)</th>
+      <th>Choose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric"><img src="spbumi.jpg" width="50" height="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SP Bumi</td>
+      <td>0630</td>
+      <td>24.00</td>
+      <th>
+          <form action="payment.html"><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+          SP Bumi
+         </button></form>
+      </th>
+    </tr>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric"><img src="sani.jpg" width="50" height="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sani</td>
+      <td>1800</td>
+      <td>35.50</td>
+      <th>
+          <form action="payment.html"><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+          Sani
+         </button></form>
+      </th>
+    </tr>
+    <tr>
+      <td class="mdl-data-table__cell--non-numeric"><img src="cepat.jpg" width="50" height="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cepat Ekspress</td>
+      <td>2200</td>
+      <td>34.00</td>
+      <th>
+          <form action="payment.html"><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+          Cepat Ekspress
+         </button></form>
+      </th>
+    </tr>
+  </tbody>
+</table>
+  </main>
+</div>
+  	
+<div class="page-content">
+ <!--Your content goes here -->
+	
+</div>
+
+</body>
+
+</html>
